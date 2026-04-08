@@ -1,0 +1,17 @@
+body {
+    background-color:black;
+    color:white;
+    text-align: center;
+    font-family: Arial;
+}
+header {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 30px;
+}
