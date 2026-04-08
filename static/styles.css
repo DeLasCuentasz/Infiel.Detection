@@ -1,17 +1,108 @@
-body {
-    background-color:black;
-    color:white;
-    text-align: center;
-    font-family: Arial;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+/* Barra superior degradada */
+.top-bar {
+    height: 6px;
+    background: linear-gradient(90deg, #00f0ff, #007bff, #6f00ff);
+}
+
+/* Header */
 header {
-    padding: 40px;
+    padding: 30px 20px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 28px;
+    font-weight: 600;
 }
 
-h2 {
-    margin-top: 30px;
+/* Sección principal */
+.hero {
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Planes */
+.planes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+/* Tarjetas */
+.card {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: 600;
+    color: #00f0ff;
+}
+
+.desc {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #aaa;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 22px;
+    padding: 12px 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
 }
